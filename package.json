@@ -1,0 +1,34 @@
+{
+  "name": "koaadmin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.ts",
+  "scripts": {
+    "dev": "tsc && nodemon --watch src/ -e ts,js src/index.ts",
+    "pro": "set NODE_ENV=pro && tsc && nodemon --watch src/ -e ts,js src/index.ts",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@koa/router": "^12.0.1",
+    "@types/koa": "^2.15.0",
+    "@types/koa-bodyparser": "^4.3.12",
+    "@types/koa-static": "^4.0.4",
+    "koa": "^2.15.3",
+    "koa-bodyparser": "^4.4.1",
+    "koa-static": "^5.0.0",
+    "mysql2": "^3.9.6",
+    "sequelize": "^6.37.3",
+    "sqlite3": "^5.1.7",
+    "typescript": "^5.4.5"
+  },
+  "devDependencies": {
+    "@types/koa__router": "^12.0.4",
+    "@typescript-eslint/eslint-plugin": "^7.7.0",
+    "@typescript-eslint/parser": "^7.7.0",
+    "eslint": "^9.0.0",
+    "ts-node": "^10.9.2"
+  }
+}
