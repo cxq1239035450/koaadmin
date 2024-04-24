@@ -6,14 +6,17 @@ const config = {
   dev: {
     port: 3000,
     // host:''
+    jwtSecret: 'secret',
   },
   // 测试环境
   test: {
     port: 80,
+    jwtSecret: 'test',
   },
   // 生产环境
   pro: {
     port: 80,
+    jwtSecret: 'pro',
   },
 }
 export default config[env]

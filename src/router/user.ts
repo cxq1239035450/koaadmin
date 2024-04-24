@@ -1,21 +1,24 @@
 import Router from '@koa/router'
 import { Context } from 'koa'
-import User from '../contronllers/userContronllers'
+import user from '../contronllers/userContronllers'
 
 const router = new Router({ prefix: '/users' })
 
-router.get('/getUserInfo', (ctx: Context) => {
-  ctx.body = '获取用户信息'
-  ctx.status = 200
-})
-router.get('/getList', User.getList)
+router.get('/getInfo', user.getInfo)
+
+router.get('/getList', user.getList)
+
 // 注册接口
-router.post('/register', User.register)
+router.post('/register', user.register)
 
 // 登录接口
-router.post('/login')
+router.post('/login', user.login)
 
 // 修改密码接口
-router.patch('/')
+router.post('/ces', (ctx: Context) => {
+  console.log(ctx.request.files, '------------------')
+
+  ctx.body = 'ces'
+})
 
 module.exports = router

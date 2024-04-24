@@ -12,12 +12,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@koa/cors": "^5.0.0",
     "@koa/router": "^12.0.1",
-    "@types/koa": "^2.15.0",
-    "@types/koa-bodyparser": "^4.3.12",
-    "@types/koa-static": "^4.0.4",
+    "jsonwebtoken": "^9.0.2",
     "koa": "^2.15.3",
-    "koa-bodyparser": "^4.4.1",
+    "koa-body": "^6.0.1",
     "koa-static": "^5.0.0",
     "mysql2": "^3.9.6",
     "sequelize": "^6.37.3",
@@ -25,6 +24,10 @@
     "typescript": "^5.4.5"
   },
   "devDependencies": {
+    "@types/jsonwebtoken": "^9.0.6",
+    "@types/koa": "^2.15.0",
+    "@types/koa-static": "^4.0.4",
+    "@types/koa__cors": "^5.0.0",
     "@types/koa__router": "^12.0.4",
     "@typescript-eslint/eslint-plugin": "^7.7.0",
     "@typescript-eslint/parser": "^7.7.0",

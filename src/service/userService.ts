@@ -12,13 +12,13 @@ class User {
     })
     return res
   }
-  async getUser(userId: any) {
+  async getUser(obj: Object) {
     const res = await userModel.findOne({
       where: {
-        id: userId,
+        ...obj,
       },
     })
-    return res
+    return res?.dataValues
   }
   async updateUser(userId: any, user: any) {
     const newUser = {}

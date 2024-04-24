@@ -10,6 +10,7 @@ lerna-debug.log*
 
 node_modules
 visualizer
+src/upload/*
 dist
 dist-ssr
 *.local
